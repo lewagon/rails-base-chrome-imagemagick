@@ -3,7 +3,7 @@ FROM ruby:$RUBY_VERSION-slim-buster as builder
 
 ARG PG_MAJOR=12
 ARG NODE_MAJOR=10
-ARG YARN_VERSION=1.19.1
+ARG YARN_VERSION=1.22.4
 
 # Common build dependencies
 RUN apt-get update -qq \
