@@ -1,3 +1,4 @@
+#
 ARG RUBY_VERSION=2.6.6
 FROM ruby:$RUBY_VERSION-slim-buster as builder
 
