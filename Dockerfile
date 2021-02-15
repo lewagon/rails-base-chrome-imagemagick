@@ -1,3 +1,4 @@
+#
 ARG RUBY_VERSION=2.6.6
 FROM ruby:$RUBY_VERSION-slim-buster as builder
 
@@ -68,4 +69,3 @@ RUN apt-get update -qq && apt-get install -yq imagemagick && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
   truncate -s 0 /var/log/*log
-
